@@ -135,7 +135,7 @@ header {
 .search-box form {
 	display: flex;
 	margin: 7rem 0 0;
-	background: #fff;
+	/* background: #fff; */
 }
 
 .search-box form .form-group {
@@ -149,6 +149,7 @@ header {
 	border: none;
 	padding: 9px 15px;
 	cursor: pointer;
+	background: #fff !important;
 	outline: none !important;
 }
 
@@ -175,7 +176,7 @@ header {
 }
 
 .search-box form .form-group input {
-	padding: 9px 15px;
+	padding: 9px 30px;
 	height: 70px;
 	border-radius: 0 !important;
 	font-size: 1.6rem;
@@ -312,7 +313,7 @@ header {
 	border-radius: 30px;
 	background: #157efb;
 	color: #fff;
-	padding: 0.8rem 2rem !important;
+	padding: 1rem 3rem !important;
 	margin-bottom: 2rem;
 }
 
@@ -366,10 +367,6 @@ header {
 .owl-carousel {
 	position: relative;
 	padding-top: 0rem;
-}
-
-.owl-item {
-	opacity: 1 !important;
 }
 
 .testimonials .owl-carousel .owl-nav {
@@ -470,7 +467,7 @@ header {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-	background: #126fe0;
+	background: #157efb;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -720,12 +717,13 @@ footer .contact a:hover {
 @media (max-width: 991.98px) {
 	nav .nav-item:nth-child(6) {
 		width: 100%;
-		padding: 1rem 2rem !important;
+		padding: 0.5rem 2rem !important;
+		margin: 0.5rem 0;
 	}
 
 	nav .nav-item:nth-child(7) {
 		width: 100%;
-		padding: 1rem 2rem !important;
+		padding: 0.5rem 2rem !important;
 	}
 	.overlay.active {
 		top: 0;
@@ -748,26 +746,7 @@ footer .contact a:hover {
 		line-height: 50px;
 		border-radius: 50%;
 	}
-	.search-box form .form-group input {
-		padding: 9px 15px;
-		height: 70px;
-		border-radius: 0 !important;
-		font-size: 1.4rem !important;
-		width: 100%;
-		border: none;
-		display: inline-block;
-		outline: 0 !important;
-	}
 
-	.search-box form .form-group select {
-		font-size: 1.4rem !important;
-		width: 100%;
-		height: 70px;
-		border: none;
-		padding: 9px 15px;
-		cursor: pointer;
-		outline: none !important;
-	}
 	nav {
 		height: 60px !important;
 		display: flex;
@@ -880,8 +859,7 @@ footer .contact a:hover {
 	}
 	.search-box form {
 		display: flex;
-		margin: 4rem 0 0;
-		background: #fff;
+		margin: 6rem 0 0;
 	}
 	.hero-content h1 {
 		font-size: 4rem;
@@ -922,7 +900,7 @@ footer .contact a:hover {
 		cursor: pointer;
 	}
 	.close-icon {
-		color: #5a5a5a;
+		color: #7c7c7c;
 		position: absolute;
 		top: 1rem;
 		right: 1rem;
@@ -985,14 +963,14 @@ footer .contact a:hover {
 	}
 	nav .nav-item {
 		width: 100%;
-		padding: 1.5rem 3rem;
+		padding: 2rem 3rem;
 	}
 	nav .nav-link {
 		font-size: 1.5rem;
 		padding: 0;
 		margin: 0rem;
 		color: #5d5d5d;
-		display: inline-block;
+		display: block;
 	}
 
 	.categories {
@@ -1001,6 +979,37 @@ footer .contact a:hover {
 }
 
 @media (max-width: 767.98px) {
+	.search-box form .form-group input {
+		padding: 9px 33px 9px 25px;
+		height: 70px;
+		border-radius: 0 !important;
+		font-size: 1.4rem;
+		width: 100%;
+		border: none;
+		display: inline-block;
+		outline: 0 !important;
+	}
+
+	.search-box form .form-group select {
+		font-size: 1.4rem;
+		width: 100%;
+		height: 70px;
+		border: none;
+		padding: 9px 15px;
+		cursor: pointer;
+		outline: none !important;
+	}
+
+	.button .btn {
+		width: 100%;
+		height: 70px;
+		text-align: center;
+		font-size: 1.4rem;
+		padding: 1rem;
+		line-height: 50px;
+		border-radius: 0;
+	}
+
 	footer .social-icons {
 		margin-bottom: 4rem;
 	}
@@ -1012,15 +1021,6 @@ footer .contact a:hover {
 		margin-bottom: 2rem;
 		transition: box-shadow 0.2s;
 		flex-direction: column;
-	}
-
-	.single-job-items .cta-feature {
-		border: 1px solid #157efb !important;
-		border-radius: 30px;
-		background: #157efb;
-		color: #fff;
-		padding: 0.8rem 2rem !important;
-		margin-bottom: 0rem;
 	}
 
 	.items {
@@ -1085,6 +1085,13 @@ footer .contact a:hover {
 }
 
 @media (max-width: 575.98px) {
+	.search-box input {
+		margin-bottom: 1rem;
+	}
+
+	.search-box select {
+		margin-bottom: 1rem;
+	}
 	.hero-content h1 {
 		font-size: 3rem;
 		font-weight: 800;
@@ -1106,35 +1113,7 @@ footer .contact a:hover {
 		background-size: cover;
 		background-position: top center;
 	}
-	.search-box form .form-group select {
-		font-size: 1.6rem;
-		width: 100%;
-		height: 50px;
-		border: none;
-		padding: 9px 15px;
-		cursor: pointer;
-		outline: none !important;
-	}
 
-	.button .btn {
-		width: 100%;
-		height: 50px;
-		text-align: center;
-		font-size: 1.5rem;
-		padding: 1rem;
-		line-height: 30px;
-		border-radius: 0;
-	}
-	.search-box form .form-group input {
-		padding: 9px 15px;
-		height: 50px;
-		border-radius: 0 !important;
-		font-size: 1.6rem;
-		width: 100%;
-		border: none;
-		display: inline-block;
-		outline: 0 !important;
-	}
 	.search-box form .w-1::after {
 		content: "";
 		display: block;
@@ -1160,8 +1139,6 @@ footer .contact a:hover {
 	.search-box form {
 		display: flex;
 		flex-direction: column;
-		margin: 4rem 0px 0px;
-		background: rgb(255, 255, 255);
 	}
 	.testimonials .owl-carousel .owl-nav {
 		display: none !important;
