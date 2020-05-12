@@ -9,6 +9,16 @@
 	--light-color: #808080;
 }
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
 *,
 *::after,
 *::before {
@@ -151,6 +161,7 @@ header {
 	cursor: pointer;
 	border-radius: 0 !important;
 	outline: none !important;
+	-webkit-appearance: none;
 }
 
 .search-box form .w-1 {
@@ -184,6 +195,7 @@ header {
 	border: none;
 	display: inline-block;
 	outline: 0 !important;
+	-webkit-appearance: none;
 }
 
 .button {
@@ -613,6 +625,7 @@ header {
 	display: inline-block;
 	outline: 0 !important;
 	height: 50px;
+	-webkit-appearance: none;
 }
 
 .subscribe button {
@@ -988,6 +1001,7 @@ footer .contact a:hover {
 		border: none;
 		display: inline-block;
 		outline: 0 !important;
+		-webkit-appearance: none;
 	}
 
 	.search-box form .form-group select {
@@ -998,6 +1012,7 @@ footer .contact a:hover {
 		padding: 9px 15px;
 		cursor: pointer;
 		outline: none !important;
+		-webkit-appearance: none;
 	}
 
 	.button .btn {
