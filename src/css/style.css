@@ -149,7 +149,7 @@ header {
 	border: none;
 	padding: 9px 15px;
 	cursor: pointer;
-	background: #fff !important;
+	border-radius: 0 !important;
 	outline: none !important;
 }
 
@@ -902,8 +902,8 @@ footer .contact a:hover {
 	.close-icon {
 		color: #7c7c7c;
 		position: absolute;
-		top: 1rem;
-		right: 1rem;
+		top: 0.5rem;
+		right: 0.5rem;
 		font-size: 2.6rem;
 		font-weight: 300;
 	}
@@ -1116,7 +1116,7 @@ footer .contact a:hover {
 
 	.search-box form .w-1::after {
 		content: "";
-		display: block;
+		display: none !important;
 		height: 1px;
 		width: 100%;
 		background: #e0e0e0;
